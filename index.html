@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ações</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <h1>API Ações</h1>
+    </div>
+    
+    <div class="caixa-busca">
+        <label for="busca"></label>
+        <input type="text" name="busca" onkeypress="if(event.key === 'Enter') busca()" id="busca-texto" placeholder="nome da bolsa"> <a href="#" id="btn-busca"><i class="fas fa-search"></i></a>
+    </div>
+    <div class="caixa" id="acao-busca">
+
+        <table class="busca-tabela">
+            <thead>
+                <tr>
+                <th>Symbol</th>
+                <th>name</th>
+                <th>type</th>
+                <th>region</th>
+                <th>marketOpen</th>
+                <th>marketClose</th>
+                <th>time zone</th>
+                <th>currency</th>
+                <th></th>
+                </tr>   
+            </thead>
+            <tbody id="resp-busca" >
+                          
+            </tbody>
+        </table>
+    </div>
+
+    <div class="caixa" id="acao-salva">
+        <table class="busca-tabela">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>name</th>
+                    <th>type</th>
+                    <th>region</th>
+                    <th>marketOpen</th>
+                    <th>marketClose</th>
+                    <th>time zone</th>
+                    <th>currency</th>
+                    <th></th>
+                </tr>   
+            </thead>
+            <tbody  id="resp-salva">
+
+                          
+            </tbody>
+        </table>
+    </div>   
+</body>
+</html>
+
+<script src="app.js"></script>
+

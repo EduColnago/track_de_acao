@@ -1,0 +1,135 @@
+*{
+    list-style: none;
+    box-sizing: 0;
+    padding: 0;
+    margin: 0; 
+    
+}
+
+body{
+    overflow: auto;
+    overflow-x: hidden;
+    
+}
+.menu{
+    display: flex;
+    background:#1ff400;
+    height: 4em;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 60px;
+   
+}
+h1{
+    margin-top: 0.4em ;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+}
+.caixa-busca{
+    display: flex;
+    width: 81.5%;
+    justify-content: flex-end;
+    flex-wrap: 0;
+    
+    
+}
+
+#busca-texto{ 
+    outline: 0;
+    border-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #1ff400;
+    width: 30vh;
+    padding: 0.4em;
+    border-radius: 3px;
+    
+
+}
+
+#btn-busca{
+    font-size: 1.8em;
+    color: black; 
+}
+
+.caixa{
+    border-top: 1px solid rgba(0, 0, 0, 0.9);;
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    align-items: flex-star;
+}
+
+.busca-tabela{
+    width: auto;
+    border-collapse: collapse;
+    margin: 20px 0px;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    font-family: 'Roboto Slab';
+}
+.busca-tabela thead th{
+    width: 100vw;
+    height: 5.5vh;
+    padding-left:3px ;
+}
+
+.busca-tabela thead tr{
+background-color: #1ff400;
+text-align: left;
+font-weight: bold;
+
+}
+
+
+.busca-tabela th, .busca-tabela td{ 
+    padding-right: 25px;  
+     
+}
+
+.busca-tabela tbody tr{
+    
+    border-bottom:1px solid black ;
+   
+   
+}
+.busca-tabela tbody tr:nth-last-of-type(even){
+    background-color: #dddddddd;
+}
+
+.busca-tabela tbody tr:last-child{
+    border-bottom: 2px solid #1ff400;
+}
+.busca-tabela td i{
+    display: inline;
+    margin-right: 10px;  
+}
+#save{
+    color: #1ff400;
+}
+#save:hover,#delete:hover,#grafo:hover{
+    cursor: pointer;
+}
+#save:active,#delete:active,#grafo:active{
+    font-size:0.9em ;
+    margin-right: 11.5px;
+}
+#grafo:active{
+    
+    font-size:0.92em ;
+    margin-right: 11.5px;
+}
+
+#delete{
+    color: red;
+}
+
+
+#grafo{
+    color:blue;
+}
+
+
